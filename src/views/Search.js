@@ -5,27 +5,24 @@ import SearchInput from './Search/SearchInput';
 import SearchResult from './Search/Result/Result';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
+  root: {},
   title: {
     margin: '1rem',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   alert: {
-    margin: '1rem',  
+    margin: '1rem',
   },
   progressWrapper: {
-    minHeight: '20rem'  
-  }
+    minHeight: '20rem',
+  },
 }));
 
 // TODO: Move to /api/ folder
 async function findDomains(query) {
   if (Math.random() * 2 > 1) throw new Error('Internet connection error. Try again.'); // Note: Fake error, only for Demo
 
-  return fetch(`https://unstoppabledomains.com/api/search?q=${query}`).then((response) =>
-    response.json()
-  );
+  return fetch(`https://unstoppabledomains.com/api/search?q=${query}`).then((response) => response.json());
 }
 
 const RESULT_DEFAULT = { exact: [], suggestions: [] };
@@ -64,7 +61,9 @@ const SearchView = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Typography className={classes.title} variant="h6" component="h2" align="center">Unstoppable Domains Search</Typography>
+        <Typography className={classes.title} variant="h6" component="h2" align="center">
+          Unstoppable Domains Search
+        </Typography>
         <SearchInput onSearch={handleSearch} />
         {error ? (
           <AppAlert className={classes.alert} severity="error" onClose={handleErrorClose}>

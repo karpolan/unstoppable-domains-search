@@ -6,7 +6,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Switch from '@material-ui/core/Switch';
 import { makeStyles } from '@material-ui/styles';
 import { PAGES } from '../../consts';
-import { SideNav/*, SideProfile*/ } from './components';
+import { SideNav /*, SideProfile*/ } from './components';
 import { /*AppLink,*/ AppIconButton } from '../../components';
 import { localStorageGet, localStorageSet } from '../../utils/localStorage';
 import { useAppStore } from '../../store/AppStore';

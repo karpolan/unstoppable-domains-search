@@ -1,3 +1,3 @@
-import SearchResultItem from './ResultItem'
+import SearchResultItem from './ResultItem';
 
-export {SearchResultItem as default, SearchResultItem}
+export { SearchResultItem as default, SearchResultItem };

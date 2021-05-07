@@ -18,7 +18,7 @@ import logo from './logo.svg';
 const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: 'none',
-    backgroundColor: '#aaa'
+    backgroundColor: '#aaa',
   },
   logo: {
     height: theme.spacing(4),

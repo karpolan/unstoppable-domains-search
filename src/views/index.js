@@ -5,7 +5,7 @@ import React from 'react';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { withSuspense } from '../components';
 import NotFound from './NotFound';
-import Search from './Search'
+import Search from './Search';
 
 /**
  * Views/Pages with Lazy Loading

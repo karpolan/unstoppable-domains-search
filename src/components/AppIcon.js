@@ -19,7 +19,6 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import BlockIcon from '@material-ui/icons/Block';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
-
 /**
  * How to use:
  * 1. Import all MUI or other SVG icons into this file.
@@ -47,7 +46,7 @@ const ICONS = {
   arrowdown: KeyboardArrowDownIcon,
   arrowup: KeyboardArrowUpIcon,
   registered: BlockIcon,
-  reserved: InfoOutlinedIcon
+  reserved: InfoOutlinedIcon,
 };
 
 /**

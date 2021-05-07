@@ -3,11 +3,10 @@ import { Grid, Tabs, Tab, Divider, Typography, makeStyles } from '@material-ui/c
 import ResultItem from '../ResultItem';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
+  root: {},
   subTitle: {
     margin: '1rem',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 }));
 

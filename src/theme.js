@@ -46,7 +46,7 @@ const LIGHT_THEME = {
   palette: {
     type: 'light',
     background: {
-      paper: '#FFFFFF', 
+      paper: '#FFFFFF',
       default: '#F9FAFF', //'#FFFFFF',
     },
     ...FRONT_COLORS,

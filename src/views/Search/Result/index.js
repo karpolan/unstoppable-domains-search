@@ -1,3 +1,3 @@
-import Result from './Result'
+import Result from './Result';
 
-export {Result as default, Result}
+export { Result as default, Result };

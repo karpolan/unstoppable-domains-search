@@ -1,3 +1,3 @@
-import SearchInput from './SearchInput'
+import SearchInput from './SearchInput';
 
-export {SearchInput as default, SearchInput}
+export { SearchInput as default, SearchInput };
