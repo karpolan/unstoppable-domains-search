@@ -13,6 +13,12 @@ import CloseIcon from '@material-ui/icons/Close';
 import DeleteIcon from '@material-ui/icons/Delete';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import SearchIcon from '@material-ui/icons/Search';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import BlockIcon from '@material-ui/icons/Block';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+
 
 /**
  * How to use:
@@ -36,6 +42,12 @@ const ICONS = {
   notifications: NotificationsIcon,
   filter: FilterListIcon,
   smile: InsertEmoticonIcon,
+  info: InfoOutlinedIcon,
+  search: SearchIcon,
+  arrowdown: KeyboardArrowDownIcon,
+  arrowup: KeyboardArrowUpIcon,
+  registered: BlockIcon,
+  reserved: InfoOutlinedIcon
 };
 
 /**

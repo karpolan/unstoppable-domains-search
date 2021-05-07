@@ -6,8 +6,8 @@ import Drawer from '@material-ui/core/Drawer';
 import Switch from '@material-ui/core/Switch';
 import { makeStyles } from '@material-ui/styles';
 import { PAGES } from '../../consts';
-import { SideNav, SideProfile } from './components';
-import { AppLink, AppIconButton } from '../../components';
+import { SideNav/*, SideProfile*/ } from './components';
+import { /*AppLink,*/ AppIconButton } from '../../components';
 import { localStorageGet, localStorageSet } from '../../utils/localStorage';
 import { useAppStore } from '../../store/AppStore';
 
@@ -77,8 +77,8 @@ const SideBar = ({ open, variant, currentUser, onClose, onLogout, className, ...
   return (
     <Drawer anchor="left" classes={drawerClasses} onClose={onClose} open={open} variant={variant}>
       <div {...props} className={clsx(classes.root, className)}>
-        <SideProfile className={classes.profile} currentUser={currentUser} showAvatar />
-        <Divider />
+        {/* <SideProfile className={classes.profile} currentUser={currentUser} showAvatar />
+        <Divider /> */}
         <SideNav className={classes.nav} pages={PAGES.filter((page) => page.showInSidebar)} showIcons={showIcons} />
         <Divider />
         <div className={classes.buttons}>
@@ -88,13 +88,13 @@ const SideBar = ({ open, variant, currentUser, onClose, onLogout, className, ...
             checked={state.darkMode}
             onChange={handleSwitchDarkMode}
           />
-          <AppIconButton icon="settings" component={AppLink} title="User Profile and Settings" to="/settings" />
+          {/* <AppIconButton icon="settings" component={AppLink} title="User Profile and Settings" to="/settings" /> */}
           <AppIconButton
             icon={showIcons ? 'VisibilityOff' : 'VisibilityOn'}
             title={showIcons ? 'Hide Icons' : 'Show Icons'}
             onClick={handleVisibilityClick}
           />
-          <AppIconButton icon="logout" title="Logout Current User" onClick={onLogout} />
+          {/* <AppIconButton icon="logout" title="Logout Current User" onClick={onLogout} /> */}
         </div>
       </div>
     </Drawer>

@@ -13,7 +13,7 @@ const Welcome = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <FinalMessage title="Welcome to _TITLE_">
+        <FinalMessage title="Welcome to Unstoppable Domains Search">
           <p>
             This{' '}
             <AppLink color="primary" href="https://reactjs.org/">

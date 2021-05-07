@@ -13,12 +13,12 @@ import { useAppStore } from './store/AppStore';
  */
 const FRONT_COLORS = {
   primary: {
-    main: '#81c784', // Green 300
-    contrastText: '#000000',
+    main: '#4C47F7',
+    // contrastText: '#000000',
   },
   secondary: {
-    main: '#ffb74d', // Orange 300
-    contrastText: '#000',
+    main: '#2fe9ff',
+    // contrastText: '#000',
   },
   info: {
     main: '#0277bd', // Light Blue 800
@@ -46,8 +46,8 @@ const LIGHT_THEME = {
   palette: {
     type: 'light',
     background: {
-      paper: '#f5f5f5', // Gray 100 - Background of "Paper" based component
-      default: '#FFFFFF',
+      paper: '#FFFFFF', 
+      default: '#F9FAFF', //'#FFFFFF',
     },
     ...FRONT_COLORS,
   },

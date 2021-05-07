@@ -18,6 +18,7 @@ import logo from './logo.svg';
 const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: 'none',
+    backgroundColor: '#aaa'
   },
   logo: {
     height: theme.spacing(4),
@@ -86,13 +87,13 @@ const TopBar = ({ title = '', className, onSideBarOpen, onLogout, ...props }) =>
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <AppIconButton
+            {/* <AppIconButton
               icon="logout"
               title="Logout Current User"
               className={classes.signOutButton}
               color="inherit"
               onClick={onLogout}
-            />
+            /> */}
           </Hidden>
           <Hidden mdUp>
             <AppIconButton icon="menu" color="inherit" onClick={onSideBarOpen} />

@@ -1,12 +1,9 @@
 import React from 'react';
-import HomeIcon from '@material-ui/icons/Home';
-import BuildIcon from '@material-ui/icons/Build';
-import InfoIcon from '@material-ui/icons/Info';
-import { About, NotFound, Settings, Tools, Welcome } from './views';
+import { About, NotFound, Search } from './views';
 import { AppIcon } from './components';
 
-export const TITLE_PUBLIC = '_TITLE_ for Not Logged User';
-export const TITLE_PRIVATE = '_TITLE_';
+export const TITLE_PUBLIC = 'Unstoppable Domains for Not Logged User';
+export const TITLE_PRIVATE = 'Unstoppable Domains';
 
 export const ROWS_PER_PAGE = 25; // Amount of rows per single page in tables and grids
 
@@ -20,30 +17,15 @@ export const PAGES = [
     exact: true,
     // Don't set href for '/' url, .href is used to find current Title in the TopBar component
     path: '/',
-    component: Welcome, // Change to most frequently used view
+    component: Search, // Change to most frequently used view
   },
   {
     showInSidebar: true,
-    title: 'Welcome',
-    href: '/welcome',
-    path: '/welcome',
-    component: Welcome,
-    icon: <HomeIcon />,
-  },
-  {
-    showInSidebar: true,
-    title: 'Tools',
-    href: '/tools',
-    path: ['/tools/:id', '/tools'],
-    component: Tools,
-    icon: <BuildIcon />,
-  },
-  {
-    title: 'Settings',
-    href: '/settings',
-    path: '/settings',
-    component: Settings,
-    icon: <AppIcon name="settings" />,
+    title: 'Search',
+    href: '/search',
+    path: '/search',
+    component: Search,
+    icon: <AppIcon icon="search" />,
   },
   {
     showInSidebar: true,
@@ -51,7 +33,7 @@ export const PAGES = [
     href: '/about',
     path: '/about',
     component: About,
-    icon: <InfoIcon />,
+    icon: <AppIcon icon="info" />,
   },
   {
     title: 'Page does not exist',

@@ -79,7 +79,7 @@ class Login extends Component {
     const { loading, inProgress, error } = this.state;
     return (
       <div style={style}>
-        <h1>_TITLE_</h1>
+        <h1>Unstoppable Domains Search</h1>
         <p>Material UI is NOT used on this page!</p>
         <p>
           This is just a sample how to use "Login with Google" and split Application routing for "Logged" and

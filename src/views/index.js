@@ -6,6 +6,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import { withSuspense } from '../components';
 import NotFound from './NotFound';
 import NotImplementedView from './NotImplemented';
+import Search from './Search'
 
 /**
  * Views/Pages with Lazy Loading
@@ -23,4 +24,4 @@ const About = withSuspense(React.lazy(() => import('./About')));
 const Tools = () => <NotImplementedView name="Tools" />; // Sample of non-implemented View
 const Settings = () => <NotImplementedView name="Settings" />; // Sample of non-implemented View
 
-export { NotFound, Login, Main, About, Welcome, Settings, Tools };
+export { NotFound, Login, Main, About, Welcome, Settings, Tools, Search };
