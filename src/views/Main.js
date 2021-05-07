@@ -90,7 +90,7 @@ Main.propTypes = {
     email: PropTypes.string,
     avatar: PropTypes.string,
     picUrl: PropTypes.string,
-  }).isRequired,
+  }),
   onLogout: PropTypes.func,
 };
 
