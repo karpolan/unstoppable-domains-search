@@ -6,11 +6,6 @@ import AppThemeProvider from './theme';
 
 /**
  * Entry point of the Application
- * Configures Axios object to use as shared API across the app, see './api/index.js'
- * Renders "Login" or "Main" view depending on presence of "token" value in local store
- * Contains "token" and "currentUser" states
- * Provides onLogout() and onSetToken() callbacks
- * Adds Material UI provider with Light/Dark themes
  */
 class App extends Component {
   render() {
@@ -18,7 +13,7 @@ class App extends Component {
       <AppStore>
         <ErrorBoundary name="App">
           <AppThemeProvider /* Material UI part of application */>
-            <Main/>
+            <Main />
           </AppThemeProvider>
         </ErrorBoundary>
       </AppStore>
