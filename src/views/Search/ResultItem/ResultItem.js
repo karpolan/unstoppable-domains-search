@@ -76,7 +76,7 @@ const SearchResultItem = ({ className, domain, availability, price, status }) =>
   function renderPrice(price) {
     return (
       <Typography className={classes.price} color="primary">
-        ${Number(price / 100).toFixed(2)}
+        ${(Number(price) / 100).toFixed(2)}
       </Typography>
     );
   }
